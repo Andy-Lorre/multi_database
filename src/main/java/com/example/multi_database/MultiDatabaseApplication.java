@@ -9,9 +9,6 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 
 @SpringBootApplication
-// Load to Environment
-// (@see resources/datasource-cfg.properties).
-@PropertySources({ @PropertySource("classpath:application.properties") })
 
 public class MultiDatabaseApplication {
 
