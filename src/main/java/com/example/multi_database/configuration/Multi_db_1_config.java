@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-public class MysqlConfig {
+public class Multi_db_1_config {
 
     @Bean(name = "multi_db_1")
     @ConfigurationProperties(prefix = "spring.datasource.primary")

@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableTransactionManagement
-public class MultiDB_2 {
+public class Multi_db_2_config {
 
     @Bean(name = "multi_db_2")
     @ConfigurationProperties(prefix = "spring.datasource.secondary")
