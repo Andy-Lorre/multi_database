@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 public class Multi_db_1_config {
 
     @Bean(name = "multi_db_1")
-    @ConfigurationProperties(prefix = "spring.datasource.primary")
+    @ConfigurationProperties(prefix = "spring.datasource.local")
     public DataSource dataSource() {
         return DataSourceBuilder.create().build();
     }

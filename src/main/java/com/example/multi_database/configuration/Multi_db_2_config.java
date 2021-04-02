@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 public class Multi_db_2_config {
 
     @Bean(name = "multi_db_2")
-    @ConfigurationProperties(prefix = "spring.datasource.secondary")
+    @ConfigurationProperties(prefix = "spring.datasource.remote")
     public DataSource dataSource(){
         return DataSourceBuilder.create().build();
     }
