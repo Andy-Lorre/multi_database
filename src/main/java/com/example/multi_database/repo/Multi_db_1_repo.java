@@ -7,10 +7,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 @Repository
-public class Mysql_2_repo {
+public class Multi_db_1_repo {
 
     @Autowired
-    @Qualifier("multi_db_2_JdbcTemplate")
+    @Qualifier("multi_db_1_JdbcTemplate")
     private JdbcTemplate mySqlJdbcTemplate;
 
     public void saveData(String id, String name, String emailid, String phoneno, String location){
